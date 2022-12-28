@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta tags always go inside the <head> elemt-->
+    <!--They are used to specify character set, page description, keywords, author of the document, and viewport settings-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Changes the view of the viewport depending on the window-->
+    <meta name="viewport" content="width=device-width, intial-scale = 1.0" />
+
+    <!--CSS Styles-->
+    <!--rel attribute defines the relationship between a linked source and current document-->
+    <!--rel works on <link>, <a>, <area>, and <form>-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Icons-->
+
+    <!--Animate CSS CDN-->
+    <link rel="stylesheet" href="https//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Anthony Thanpoovong</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <!--The nav element represnts a section of a page whose purpose is to provide navigation links, either within the current documentaiton or to other documents-->
+        <h1>ANTHONY THANPOOVONG | Software Engineer</h1>
+        <!--ul is unordered list-->
+        <ul class="navigation">
+            <!--The inline a (anchor) element denotes a hyper link from one web address to another-->
+            <!--The href attribute indicates the destination of the hyperlink. Without the href attribute, the a element won't work-->
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact Me</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" , id="about">
+        <img src="assets/images/setup.jpg" alt="anthony-thanpoovong" loading="lazy" class="hero-img" />
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-text">About Me</h2>
+            <p class="bio-text">
+                Hi everyone, my name is Anthony Thanpoovong and I'm a third year Software Engineering student at Toronto
+                Metropolitan University.
+                My interests include software design and developement, web development, data analysis and mobile
+                applications.
+            </p>
+        </div>
+    </section>
+
+    <!-- More about -->
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p>
+            I'm currently looking for internships in summer of 2023 for software engineer/software developer positions.
+            The current personal projects I'm currently working
+            on are a Tic Tac Toe game, Music Player App and a Music Player Discord Bot.
+        </p>
+        <p>
+            When I'm not working on these projects, I enjoy going to the gym, playing sports such as basketball or
+            volleyball, and spending quality time with my girlfriend, friends and family. I am also a sneakerhead as my
+            favourite shoes to wear are my Jordan 1's or my Yeezy Waverunner's
+        </p>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" , id="skills">
+        <h2 class="skill-header"> My Top Skills</h2>
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img src="assets/icons/icons8-java.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/icons8-python.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/icons8-c-programming.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+            <div class="second-set animate__animated animate__pulse">
+                <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section-->
+    <section class="projects" , id="projects">
+        <h2 class="projects-title">
+            Some of my Recent Projects
+        </h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="assets/images/university-administration-system.png" alt="university-administration-system" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Better RAMSS</h3>
+                <p class="project-details">
+                    A self-serivce university administration system that lets students or staff view grades, financial
+                    information, personal information and courses throughout a university degree
+                </p>
+                <a href="https://github.com/anthonythanpoovong/University-Administration-System" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/BookStoreCatalogue.png" alt="book-store" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Book Store</h3>
+                <p class="project-details">
+                    A book store catalogue where customers can purchase books regulary to have cheaper discounts
+                </p>
+                <a href="https://github.com/anthonythanpoovong/BookStore-App" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/Discord-Music-Bot.png" alt="Music Discord Bot" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Music Discord Bot</h3>
+                <p class="project-details">
+                    A music discord bot that streams songs through Youtube using Javascript and Node.js
+                </p>
+                <a href="https://github.com/anthonythanpoovong/Discord-Bot" target="_blank" class="project-link">Check it Out</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section-->
+    <section class="contact" id="contact">
+        <h2>How to Contact Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="mailto:thanpoovong84@gmail.com" method="POST">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name"
+                            class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email"
+                            class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+                            class="input-field" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social accounts -->
+    <div class="socials">
+        <a href="https://www.instagram.com/anthony.thanpoovong/" target="_blank">
+            <img src="assets/icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon" /></a>
+        <a href="https://www.linkedin.com/in/anthony-thanpoovong/" target="_blank"><img
+                src="assets/icons/icons8-linkedin-circled.gif" alt="LinkedIn" loading="lazy" class="socicon" /></a>
+        <a href="https://github.com/anthonythanpoovong" target="_blank"><img src="assets/icons/icons8-github.gif"
+                alt="Github" loading="lazy" class="socicon" /></a>
+    </div>
+
+
+    </div>
+    <!-- Footer section -->
+    <footer>
+        <p class="copy">&copy; Copyright 2022</p>
+        <p class="copy">
+            Built by
+            <a href="https://www.instagram.com/anthony.thanpoovong/" target="_blank">Anthony Thanpoovong</a>
+        </p>
+    </footer>
+
+    <!-- Website Scripts -->
+    <script src="assets/js/app.js"></script>
+
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
