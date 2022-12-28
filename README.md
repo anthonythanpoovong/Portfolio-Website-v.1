@@ -1,2 +1,2 @@
 # Portfolio-Website-v.1
-Portfolio Website
+Portfolio Page in Progress, currently using HTML, CSS and JavaScript
