@@ -111,8 +111,8 @@ nav ul li {
 }
 
 .hero img {
-  height: 28rem;
-  width: 37.5rem;
+  height: auto;
+  max-width: 70%;
 }
 
 .bio {
